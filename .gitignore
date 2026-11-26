@@ -5,4 +5,5 @@ coverage
 typechain-types
 dist
 .env
+.env.example
 merkle-output.json
