@@ -1,0 +1,28 @@
+{
+  "name": "community-token-airdrop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Merkle-tree based ERC20 airdrop for a whitelisted community",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "merkle": "tsx scripts/build-merkle.ts",
+    "claim-proof": "tsx scripts/get-proof.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "hardhat": "^2.22.18",
+    "merkletreejs": "^0.4.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0",
+    "dotenv": "^16.4.7",
+    "keccak256": "^1.0.6"
+  }
+}
